@@ -22,7 +22,7 @@ function telaInformacao(id, nome, type, photo, peso, altura) {
     telaInfor.classList.add("tela");
     telaInfor.classList.remove(type)
     telaInfor.classList.add(type)
-    telaInfor.style.width = "600px"
+    telaInfor.style.width = "min(90vw, 600px)"
     fechamento.style.width = '25px';
     fechamento.style.transition = "All ease .5s";
     xEsquerdo.classList.add("xEsquerdo");
