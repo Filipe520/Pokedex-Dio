@@ -1,0 +1,68 @@
+/* Fonte Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #fff;
+    height: 100vh;
+    scrollbar-width: auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main h1 {
+    font-weight: 700;
+}
+
+/* Media query Celulares */
+@media screen and (max-width: 600px){
+    #telaInfor {
+        width: 90vw;
+    }
+    .logoFundo {
+        width: max(5vw, 140px);
+        right: -8px;
+    }
+    .pokemonALturaPeso {
+        width: 230px;
+    }
+}
+/* Media query Tablet */
+
+@media screen and (min-width: 600px) and (max-width: 992px){
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+
+    .logoFundo {
+        width: 185px;
+    }
+    .pokemonALturaPeso {
+        width: 400px;
+    }
+}
+/* Media query DekTop */
+@media screen and (min-width: 1000px) {
+    .tela {
+        height: 50vh;
+    }
+    .logoFundo {
+        width: 175px;
+    }
+    .pokemonALturaPeso {
+        width: 400px;
+    }
+}

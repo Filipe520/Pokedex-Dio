@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+.tela {
+    width: 600px;
+    height: 70vh;
+    border-radius: 10px;
+    border: 1px solid rgb(75, 75, 75);
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all cubic-bezier(0.68, -0.55, 0.27, 1.55) .5s;
+}
+
+#fechamento {
+    width: 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.elemento {
+    width: 2px;
+    height: 20px;
+    position: relative;
+    transition: all ease .5s;
+    background-color: rgb(36, 36, 36);
+}
+
+
+.xEsquerdo {
+    transform: rotate(42deg);
+    left: 3px;
+}
+
+.xDireito {
+    transform: rotate(318deg);
+}
+
+.pokemonInfor {
+    width: 90%;
+    height: 160%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.pokemonNomeID {
+    max-width: 600px;
+    min-width: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: white;
+}
+
+.pokemonNome {
+    text-transform: capitalize;
+
+}
+.pokemonId {
+    display: flex;
+    align-items: end;
+}
+
+.photoPokemon {
+    width: 120px;
+    bottom: -20px;
+    position: absolute;
+}
+
+.pokemonDetalis {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border-radius: 30px 30px 10px 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemonALturaPeso {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pokemonAltura, .pokemonPeso {
+    /* width: 230px; */
+    color: black;
+    font-size: 1.5em;
+    border-bottom: 1px solid red;
+}
+
+
+.logoFundo {
+    position: absolute;
+    right: -35px;
+    bottom: -20px
+}
+
+.blocoAlturaFilho1 {
+    background-color: rgb(26 190 226);
+    height: 20px;
+}
+.blocoAlturaFilho2 {
+    background-color: rgb(206, 226, 26);
+    height: 20px;
+}
+
+ /* Animação CSS */
+
+ 
+.animaX {
+     transform: translateY(0px);
+     animation: animaX 5s ease-in-out infinite;
+}
+@keyframes animaX {
+    0% {transform: translateY(0px);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0px);}
+}
